@@ -1,0 +1,15 @@
+  467  git clone git@github.com:sashakypinko/Linux_HW_12.git
+  468  cd Linux_HW_12/
+  469  git checkout -b feature
+  470  echo "Changes in feature branch" >> README.md
+  471  echo "test" >> .gitignore
+  472  git commit -m "change readme and gitignore"
+  473  git add .
+  474  git commit -m "change readme and gitignore"
+  475  git push -u origin feature
+  476  git commit --amend -m "change readme and gitignore (ammend)"
+  477  git push -f
+  478  git checkout main
+  479  git merge feature
+  480  git push
+  481  history > history.txt
